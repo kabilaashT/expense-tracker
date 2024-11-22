@@ -1,0 +1,168 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .expenses-container {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* App Title */
+  .app-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 2rem;
+  }
+  
+  /* Form Styling */
+  .expense-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .expense-form input,
+  .expense-form select,
+  .expense-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .expense-form input {
+    flex: 1;
+    margin-right: 0.5rem;
+  }
+  
+  .expense-form select {
+    margin-right: 0.5rem;
+    flex: 1;
+  }
+  
+  .expense-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .expense-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Sort Buttons */
+  .sort-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .sort-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .sort-button:disabled {
+    background-color: #d4d4d4;
+    cursor: not-allowed;
+  }
+  
+  .sort-button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+  
+  /* Expense List */
+  .expense-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+  }
+  
+  .expense-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Delete Icon */
+  .delete-icon {
+    color: red;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .delete-icon:hover {
+    color: darkred;
+    transform: scale(1.1);
+  }
+  
+  /* Expense Chart */
+  .expense-chart-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .expense-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .expense-form input,
+    .expense-form select,
+    .expense-form button {
+      margin-bottom: 0.5rem;
+      flex: none;
+    }
+  
+    .sort-buttons {
+      flex-direction: column;
+    }
+  
+    .sort-button {
+      width: 100%;
+    }
+  }
+  
